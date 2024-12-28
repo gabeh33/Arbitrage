@@ -13,12 +13,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    try {
     nba_games = DK.get_nba_events()
     return nba_games
-    } catch () {
-        return "Unable to access DK"
-    }
 
 if (__name__ == "__main__"):
     app.run()

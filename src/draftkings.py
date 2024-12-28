@@ -33,3 +33,4 @@ class DK:
         """
         Gets the odds for the specific link provided
         """
+        pass
